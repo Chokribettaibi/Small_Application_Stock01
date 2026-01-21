@@ -1,0 +1,79 @@
+body {
+  background-color: #0a0a23; /* Couleur de fond sombre freeCodeCamp */
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+}
+
+.card {
+  background-color: #1b1b32;
+  border: 2px solid #3b3b4f;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ewert-regular {
+  font-family: "Ewert", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #feac32;
+  text-shadow: -1px 5px 2px blue;
+}
+.card:hover {
+  border-color: #feac32;
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.title a {
+  text-decoration: none;
+}
+
+.status {
+  color: #d0d0d5;
+  font-size: 0.9rem;
+}
+
+#seriAtable {
+  margin-top: 20px;
+  height: 50%;
+  /* border-collapse: collapse; */
+  overflow-x: auto;
+}
+/* Styles spécifiques pour les projets et reviews */
+.card-project {
+  border-color: #4d5b21;
+}
+.card-project .course-title {
+  color: #acd157;
+}
+
+.card-review {
+  border-color: #4a302c;
+}
+.card-review .course-title {
+  color: #f1be32;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
