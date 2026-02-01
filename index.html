@@ -12,40 +12,64 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">    
-<link href="https://fonts.googleapis.com/css2?family=Ewert&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ewert&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ewert&family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1 class="mb-4">Potent<i class="fa-solid fa-at text-primary"></i>t Pro <i class="fa-brands fa-battle-net  m-2 text-primary"></i></h1>
+      <!-- <img
+        width="100%"
+        height="auto"
+        class="header-image"
+        src="https://images.samsung.com/is/image/samsung/p6pim/fr/feature/165908794/fr-feature-galaxy-a26-5g-sm-a266-545313764?$FB_TYPE_A_MO_PNG$"
+        alt="Samsung Galaxy A26 5G"
+      /> -->
+      <header class="m-2">
+        <h1 class="mb-4">
+          Potent<i class="fa-solid fa-at text-primary"></i>al Pro
+          <i class="fa-brands fa-battle-net m-2 text-primary"></i>
+          <!-- <button>Ajouter article</button> -->
+        </h1>
 
-      <div class="card">
+      </header>
+
+      <main class="m-2">
+        <div class="card">
         <div>
           <div class="title"><i class="fa-brands fa-apple m-2"></i> Iphone</div>
           <div class="status">67/128 Article disponible</div>
         </div>
-        <div class="arrow">›</div>
+        <button type="button" class="arrow" id="btnIndinix"><span><i class="bi bi-caret-right"></i></span></button>
       </div>
 
       <div class="card">
         <div>
-          <div class="title"><a href="page/samsung/idex.html">Samsung</a></div>
+          <div class="title"><a href="page/samsung/index.html">Samsung</a></div>
           <div class="status">67/128 Article disponible</div>
         </div>
-        <div class="arrow">›</div>
+        <button onclick="goToPageSamsung()" type="button" class="arrow" id="btnSamsung"><span><i class="bi bi-caret-right"></i></span></button>
       </div>
 
       <div class="card">
         <div>
-          <div class="title">Infinixe</div>
+          <div class="title"><a href="page/infinix/index.html">Infinixe</a></div>
           <div class="status">2/55 Article disponible</div>
         </div>
-        <div class="arrow">›</div>
+        <button type="button" onclick="goToPageInfinix()" class="arrow" id="btnIndinix"><span><i class="bi bi-caret-right"></i></span></button>
       </div>
 
       <div class="card">
@@ -53,7 +77,7 @@
           <div class="title">Redmi</div>
           <div class="status">0/53 Article disponible</div>
         </div>
-        <div class="arrow">›</div>
+        <button type="button" class="arrow" id="btnIndinix"><span><i class="bi bi-caret-right"></i></span></button>
       </div>
 
       <!-- <div class="card card-project">
@@ -66,11 +90,10 @@
 
       <div class="card">
         <div>
-          <div class="title"><i class="fa-brands fa-oppo m-"></i>
-Oppo</div>
+          <div class="title"><i class="fa-brands fa-oppo m-"></i> Oppo</div>
           <div class="status">0/55 Article disponible</div>
         </div>
-        <div class="arrow">›</div>
+        <button type="button" class="arrow" id="btnIndinix"><span><i class="bi bi-caret-right"></i></span></button>
       </div>
 
       <!-- <div class="card card-review">
@@ -86,7 +109,7 @@ Oppo</div>
           <div class="title">Itel</div>
           <div class="status">67/128 Steps Complete</div>
         </div>
-        <div class="arrow">›</div>
+        <button type="button" class="arrow" id="btnIndinix"><span><i class="bi bi-caret-right"></i></span></button>
       </div>
 
       <div class="card">
@@ -94,10 +117,15 @@ Oppo</div>
           <div class="title">Huawei</div>
           <div class="status">67/128 Steps Complete</div>
         </div>
-        <div class="arrow">›</div>
+        <button type="button" class="arrow" id="btnIndinix"><span><i class="bi bi-caret-right"></i></span></button>
       </div>
+      </main>
+      <footer class="m-2">
+        <p class="text-center">Betaibi Chokri <br><span class="text-success"><i class="bi bi-whatsapp"></i> 98 104 699</span></p>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

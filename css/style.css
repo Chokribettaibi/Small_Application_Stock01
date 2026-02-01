@@ -74,6 +74,15 @@ h1 {
 }
 
 .arrow {
-  font-size: 1.5rem;
   color: #ffffff;
+  background: transparent;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+.arrow span {
+  font-size: 1.5rem;
+  color: #f1be32;
 }
