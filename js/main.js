@@ -5,3 +5,13 @@ function goToPageSamsung() {
 function goToPageInfinix() {
   window.location.href = "page/infinix/index.html";
 }
+
+fetch('js/db.json').then((reslt)=>{
+  console.log(reslt);
+  let myData = reslt.json();
+  // console.log(myData);
+  return myData
+}).then((myData)=>{
+  // console.log(myData.samsung)
+
+})
